@@ -10,6 +10,7 @@ export interface Rendering {
     title?: string;
 }
 
+//Initial state
 export const globalState: Rendering = {
     data: [],
     title: ''

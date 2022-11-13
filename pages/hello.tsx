@@ -9,7 +9,7 @@ const Hello = () => {
         fetch(`https://jsonplaceholder.typicode.com/albums`)
             .then((response) => response.json())
             .then((res) => {
-                //initialization context state of data
+                //update value context of state data
                 ctx.dispatch({
                     data: res
                 })
@@ -20,7 +20,7 @@ const Hello = () => {
     }, [])
 
     const setTitle = () => {
-        //initialization context state of title
+        //update value context of state title
         ctx.dispatch({
             title: 'Congratulations!',
         })
